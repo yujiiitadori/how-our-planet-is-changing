@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website Title</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+			width: 100%;
+            background-color: #fcf7ef;
+
+        }
+        header {
+            background-image: linear-gradient(rgba(240, 248, 255, 0.5), rgba(240, 248, 255, 0.5)),url("pictures/header.jpg"); /* Adjust the image file name */
+            background-size: cover;
+            background-position: center;
+            height: 300px; /* Adjust height as needed */
+            position: relative;
+            color: black;
+         }
+          .header-content {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 20px; /* Adjust left position as needed */
+        }
+        nav {
+            background-color: #555;
+            padding: 10px;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 998; /* Ensure nav is below header */
+            }
+            nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            }
+            nav ul li {
+            display: inline;
+            margin-right: 20px;
+            }
+            nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            }
+            section {
+            padding: 20px;
+            margin-top: 100px; /* Adjust margin to create space between header and sections */
+            text-align: center; /* Center-align text within the section */
+        }
+	
+
+
+
+
+
+
+
+
+
+
+	</style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Your Website Header</h1>
+            <!-- Add more text or elements as needed -->
+        </div>
+    </header>
+    <nav id="navbar">
+        <ul>
+            <li><a href="#section1">Section 1</a></li>
+            <li><a href="#section2">Section 2</a></li>
+            <li><a href="#section3">Section 3</a></li>
+            <li><a href="#section4">Section 4</a></li>
+            <li><a href="#section5">Section 5</a></li>
+            <li><a href="#section6">Section 6</a></li>
+            <!-- Add more sections as needed -->
+        </ul>
+    </nav>
+    <section id="section1">
+        <h2>Section 1</h2>
+        <p>This is the content of section 1. You can add your text, images, and other elements here.</p>
+	
+    </section>
+<style>
+/*section2*/  
+/* Center-align text and images in Section 2 */
+/* Center-align text and images in Section 2 */
+ .container {
+        text-align: center;
+    }
+.image-container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.image-container2 > div {
+    flex: 0 0 30%;
+    margin: 1%;
+    text-align: center; /* Ensure text is centered */
+	position: relative; /* Add relative positioning */
+
+}
+
+
+
+        .image-container2 img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+			transition: transform 0.3s ease; /* Add transition for smooth hover effect */
+
+        }
+        .image-container2 p {
+            text-align: center;
+            margin-top: 1%; /* Adjust the margin between the image and its subtext as needed */
+        }
+        /* Remove blue color and underline from links in Section 2 */
+        #section2 a {
+            color: inherit;
+            text-decoration: none;
+        }
+		.image-container2 div:hover img {
+         transform: scale(1.1); /* Enlarge the image on hover */}
+
+		 .image-container2 div:hover p {
+            transform: scale(1); /* Enlarge the text on hover */
+        }
+		
+
+</style>
+    <section id="section2">
+        <h2>Section 2</h2>
+        <div class="image-container2">
+            <div>
+                <a href="edu1.html"><img src="pictures/edu1.jpg" alt="Image 1"><p>Subtext for Image 1</p></a>
+
+            </div>
+            <div>
+                <a href="edu2.html"><img src="pictures/edu2.jpg" alt="Image 2"> <p>Subtext for Image 2</p></a>
+            </div>
+			<div>
+                <a href="page2.html"><img src="pictures/edu2.jpg" alt="Image 3"> <p>Subtext for Image 3</p></a>
+            </div>
+            
+        </div>
+    </section>
+
+
+
+
+
+
+
+     <section id="section3">
+	 <style>
+	 
+    /*section3*/
+	  .mySlides img {
+      /* Set a fixed width and height for all images */
+      width: 500%; /* Adjust as needed */
+      height: 500%; /* Adjust as needed */
+      /* Ensure that the image maintains its aspect ratio */
+      object-fit: cover;
+      }
+        /* Slideshow container */
+        .slideshow-container {
+          max-width: 1000px;
+          margin: auto;
+          position: relative;
+        }
+
+        /* Next & previous buttons */
+      /* CSS for Section 3 */
+.prev, .next {
+  /* Position the buttons absolutely */
+  position: absolute;
+  /* Set top to 50% to center the buttons vertically */
+  top: 50%;
+  /* Set width to auto to match the width of the buttons' content */
+  width: auto;
+  /* Set padding to adjust the spacing around the buttons */
+  padding: 16px;
+  /* Set font size to adjust the size of the buttons */
+  font-size: 18px;
+  /* Set z-index to ensure the buttons appear above the slideshow */
+  z-index: 999;
+  /* Add transition for smooth animation */
+  transition: transform 0.3s ease;
+}
+
+/* Position the "previous" button to the left */
+.prev {
+  left: 0;
+  /* Translate the button to the left by 50% of its own width */
+  transform: translateX(-50%);
+}
+
+/* Position the "next" button to the right */
+.next {
+  right: 0;
+  /* Translate the button to the right by 50% of its own width */
+  transform: translateX(50%);
+}
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover, .next:hover {
+          background-color: rgba(0,0,0,0.8);
+        }
+
+        /* Caption text */
+        .text {
+          color: black;
+          font-size: 15px;
+          padding: 8px 12px;
+          position: absolute;
+          bottom: 8px;
+          left: 0;
+          width: 100%;
+          text-align: center;
+          transition: bottom 0.6s, opacity 0.6s;
+          opacity: 1;
+        }
+
+        /* Hidden text */
+        .hidden-text {
+          color: black;
+          font-size: 15px;
+          padding: 8px 12px;
+          position: absolute;
+          bottom: 0;
+          top: 0;
+          width: 100%;
+          text-align: left;
+		  padding:100px;
+          opacity: 0;
+          transition: opacity 0.6s;
+        }
+
+        /* On hover, move caption text to the top and show additional text */
+        .mySlides:hover .text {
+          opacity: 0;
+        }
+
+        .mySlides:hover .hidden-text {
+          opacity: 1;
+        }
+
+        /* On hover, decrease image opacity */
+        .mySlides:hover img {
+          opacity: 0.7;
+        }
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+          .prev, .next,.text, .hidden-text {font-size: 11px}
+        }    
+
+
+	 </style>
+        <h2>Section 3</h2>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="pictures/game1.png" style="width:100%">
+                <div class="text">
+                    <p>Main text here.</p>
+                </div>
+                <div class="hidden-text">
+                    <h3>Title</h3>
+                    <p>Little body of text here.</p>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="pictures/game2.jpg" style="width:100%">
+                <div class="text">
+                    <p>Main text here.</p>
+                </div>
+                <div class="hidden-text">
+                    <h3>Title</h3>
+                    <p>Little body of text here.</p>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="pictures/game3.jpg" style="width:100%">
+                <div class="text">
+                    <p>Main text here.</p>
+                </div>
+                <div class="hidden-text">
+                    <h3>Title</h3>
+                    <p>Little body of text here.</p>
+                </div>
+            </div>
+
+			<div class="mySlides fade">
+                <img src="pictures/game4.jpg" style="width:100%">
+                <div class="text">
+                    <p>Main text here.</p>
+                </div>
+                <div class="hidden-text">
+                    <h3>Title</h3>
+                    <p>Little body of text here.</p>
+                </div>
+            </div>
+
+			<div class="mySlides fade">
+                <img src="pictures/game5.jpg" style="width:100%">
+                <div class="text">
+                    <p>Main text here.</p>
+                </div>
+                <div class="hidden-text">
+                    <h3>Title</h3>
+                    <p>Little body of text here.</p>
+                </div>
+            </div>
+
+			<div class="mySlides fade">
+                <img src="pictures/game6.png" style="width:100%">
+                <div class="text">
+                    <p>Main text here.</p>
+                </div>
+                <div class="hidden-text">
+                    <h3>Title</h3>
+                    <p>Little body of text here.</p>
+                </div>
+            </div>
+
+            <!-- Next & previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+        <br>
+
+        <!-- Dots to indicate slide number -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+    </section>
+
+
+<script>
+        /* JavaScript for Section 3 */
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+    </script>
+<section id="section4"> <!-- need to make it left aligned -->
+    <h2>Section 4</h2>
+    <div class="article-container">
+        <ul class="article-list">
+            <li class="article">
+                <a href="#" onclick="openPopup(); return false;">
+                    <img src="pictures/icon1.png" alt="Icon 1" class="icon">
+                    <span class="article-text">Article 1</span>
+                </a>
+            </li>
+			  <li class="article">
+                <a href="#" onclick="openPopup(); return false;">
+                    <img src="pictures/icon2.jpg" alt="Icon 2" class="icon">
+                    <span class="article-text">Article 2</span>
+                </a>
+            </li>
+        <li class="article">
+            <a href="#" onclick="openPopup(); return false;">
+                <img src="pictures/icon3.jpg" alt="Icon 3" class="icon">
+                    <span class="article-text">Article 3</span>
+            </a>
+        </li>
+        <li class="article">
+            <a href="#" onclick="openPopup(); return false;">
+                <img src="pictures/icon4.jpg" alt="Icon 4" class="icon">
+                    <span class="article-text">Article 4</span>
+            </a>
+        </li>
+        <li class="article">
+            <a href="#" onclick="openPopup(); return false;">
+                <img src="pictures/icon5.jpg" alt="Icon 5" class="icon">
+                    <span class="article-text">Article 5</span>
+            </a>
+        </li>
+          </ul>
+    </div>
+</section>
+
+<script>
+    function openPopup() {
+        window.open("popup.html", "Popup", "width=400,height=300");
+    }
+</script>
+
+<style>
+    /* Style for Section 4 */
+    #section4 {
+        padding: 20px;
+        margin-top: 100px;
+        text-align: left;
+		
+    }
+
+    /* Article Container */
+    .article-container {
+        max-width: 600px; /* Adjust the maximum width as needed */
+        margin: 0 auto; /* Center the container */
+        text-align: left;
+    }
+
+    /* Article List */
+    .article-list {
+        list-style-type: none;
+        padding: 0;
+		margin: 0;
+    }
+
+    .article {
+        margin-bottom: 20px;
+		    text-align: left; /* Ensure text alignment is left */
+
+    }
+
+    /* Icon */
+    .icon {
+        width: 80px; /* Adjust icon size as needed */
+        height: 80px; /* Adjust icon size as needed */
+        margin-right: 5px;
+        vertical-align: middle; /* Align the icon vertically */
+    }
+
+    /* Text */
+    .article a {
+        text-decoration: none; /* Remove text underline */
+        color: black;
+        display: flex; /* Use flexbox for alignment */
+        align-items: center; /* Center align the items vertically */
+    }
+
+    .article a:hover {
+        background-color: lightgray; /* Highlight color on hover */
+    }
+
+    /* Article Text */
+    .article-text {
+        font-size: 40px; /* Adjust text size as needed */
+		text-align: center;
+    }
+
+    /* Light Background Under Text */
+    .article a::after {
+        content: "";
+        position: absolute;
+        bottom: -2px; /* Adjust distance from text */
+        left: 0;
+        width: 100%;
+        height: 1px; /* Adjust line height */
+        background-color: lightgray; /* Light background color */
+        z-index: -1;
+    }
+</style>
+
+
+
+
+
+<section id="section5">
+    <h2>Section 5</h2>
+    <div class="image-container5">
+        <img src="pictures/whyus1.jpeg" alt="Image 1" class="left-image">
+        <div class="text-container5">
+            <p>This is the text content next to the image.</p>
+            <!-- Add more text or elements as needed -->
+        </div>
+    </div>
+</section>
+
+<style>
+    /* Style for Section 5 */
+    #section5 {
+        padding: 20px;
+        margin-top: 100px;
+        text-align: left;
+    }
+
+    /* Image Container */
+    .image-container5 {
+        display: flex;
+        align-items: center;
+    }
+
+    /* Image */
+    .left-image {
+        max-width: 50%;
+    }
+
+    /* Text Container */
+    .text-container5 {
+        flex-grow: 1;
+        padding-left: 20px;
+    }
+
+    /* Text */
+    .text-container5 p {
+        font-size: 18px;
+        margin-top: 0;
+    }
+</style>
+
+
+
+    <section id="section6">
+	<style>
+
+	.button-container {
+  text-align: center;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  display: center block;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Additional styles for the modal forms */
+/* Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4); /* Black with opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto;
+  border: 1px solid #888;
+  top: 50%;
+  width: 80%;
+  max-width: 30%; /* Adjust max-width as needed */
+  padding: 16px;
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35%; /* Adjust the distance from the right side */
+  top: 12%; /* Adjust the distance from the top */
+  color: #000;
+  font-size: 30px; /* Adjust the font size as needed */
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+}
+
+
+/* Change styles for cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>Section 6</h2>
+  
+<div class="button-container">
+  <button onclick="document.getElementById('loginModal').style.display='block'">Login</button>
+  <button onclick="document.getElementById('signupModal').style.display='block'">Sign Up</button>
+  <button onclick="document.getElementById('feedbackModal').style.display='block'">Feedback</button>
+</div>
+
+<!-- Login Modal -->
+<div id="loginModal" class="modal">
+  <form class="modal-content animate" action="/login_action.php" method="post">
+    <div class="container">
+      <span onclick="document.getElementById('loginModal').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+      <br>
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+      <br>
+      <button type="submit">Login</button>
+      <label>
+      <br>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+    <div class="container" >
+      <button type="button" onclick="document.getElementById('loginModal').style.display='none'" class="cancelbtn">Cancel</button>
+      <br>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<!-- Signup Modal -->
+<div id="signupModal" class="modal">
+  <form class="modal-content" action="/signup_action.php" method="post">
+    <div class="container">
+      <span onclick="document.getElementById('signupModal').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <h1>Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      <label for="email"><b>Email</b></label><br>
+      <input type="text" placeholder="Enter Email" name="email" required>
+      <br>
+      <label for="psw"><b>Password</b></label><br>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+      <br>
+      <label for="psw-repeat"><b>Repeat Password</b></label><br>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      <br>
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('signupModal').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<!-- Feedback Modal -->
+<div id="feedbackModal" class="modal">
+  <form class="modal-content" action="/feedback_action.php" method="post">
+    <div class="container">
+      <span onclick="document.getElementById('feedbackModal').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <h1>Feedback</h1>
+      <p>We appreciate your feedback. Please fill out the form below.</p>
+      <hr>
+      <div class="row">
+        <div class="col-25">
+          <label for="fname">First Name</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="fname" name="firstname" placeholder="Your first name.." required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="lname">Last Name</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="email">Email</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="email" name="email" placeholder="Your email.." required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="feedback">Feedback</label>
+        </div>
+        <div class="col-75">
+          <textarea id="feedback" name="feedback" placeholder="Your feedback.." style="height:200px" required></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <input type="submit" value="Submit">
+      </div>
+    </div>
+  </form>
+</div>
+
+
+<script>
+// Get the modal elements
+var loginModal = document.getElementById('loginModal');
+var signupModal = document.getElementById('signupModal');
+var feedbackModal = document.getElementById('feedbackModal');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == loginModal) {
+        loginModal.style.display = "none";
+    }
+    if (event.target == signupModal) {
+        signupModal.style.display = "none";
+    }
+    if (event.target == feedbackModal) {
+        feedbackModal.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>

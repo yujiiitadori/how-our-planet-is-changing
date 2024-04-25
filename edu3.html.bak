@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scrollable Image with Cross</title>
+<style>
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .container {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+  }
+
+  .image {
+    width: 100%;
+    height: auto;
+  }
+
+  .cross {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 999;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <a href="home_page.html">
+      <img src="edu3.jpeg" class="image" alt="Your Image">
+    </a>
+  </div>
+  <a href="home_page.html" class="cross">&times;</a>
+</body>
+</html>
