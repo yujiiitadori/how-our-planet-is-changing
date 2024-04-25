@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climate Change Discussion</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome for icons -->
+    <style>
+        /* CSS for the page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            position: relative;
+        }
+
+        .heading {
+            text-align: center;
+        }
+
+        .black-box {
+            background-color: black;
+            padding: 40px;
+            text-align: center;
+            margin-bottom: 20px;
+            height: 200px; /* Increased height */
+        }
+
+        .pay-button {
+            background-color: green;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .pay-button:hover {
+            background-color: darkgreen;
+        }
+
+        .cross-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 20px;
+            color: black;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .cross-button:hover {
+            color: red;
+        }
+
+        /* Style for chatbox */
+        .chatbox {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .chat-container {
+            height: 200px; /* Adjust chat container height as needed */
+            overflow-y: auto; /* Enable vertical scrolling */
+            border: 1px solid #ccc; /* Add border for better visualization */
+            padding: 10px;
+        }
+
+        #chat-form {
+            margin-top: 10px;
+        }
+
+        #message {
+            width: calc(100% - 70px); /* Adjust input width */
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            margin-right: 5px;
+        }
+
+        #message:focus {
+            outline: none;
+            border-color: dodgerblue; /* Change border color on focus */
+        }
+
+        #message::placeholder {
+            color: #999; /* Placeholder text color */
+        }
+
+        button[type="submit"] {
+            background-color: dodgerblue;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #007bb6; /* Darker shade of blue on hover */
+        }
+
+        /* Style for debate prompts */
+        .debate-prompts {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+        }
+
+        .debate-prompts h2 {
+            margin-top: 0;
+        }
+
+        .debate-prompts ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .debate-prompts li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">Climate Change Discussion</h1>
+
+        <!-- Black box with play button -->
+        <div class="black-box">
+            <i class="fas fa-play fa-5x" style="color: white;"></i> <!-- Play button icon -->
+        </div>
+
+        <!-- Cross button -->
+        <a href="home_page.html#section4" class="cross-button">&#10006;</a>
+
+        <!-- AI chatbox -->
+        <div class="chatbox">
+            <!-- Your AI chatbox implementation goes here -->
+            <div class="chat-container">
+                <!-- Chat messages will be displayed here -->
+            </div>
+            <!-- Input form for sending messages -->
+            <form id="chat-form">
+                <input type="text" id="message" placeholder="Type your message...">
+                <button type="submit">Send</button>
+            </form>
+        </div>
+
+        <!-- Debate prompts -->
+        <div class="debate-prompts">
+            <h2>Debate Prompts</h2>
+            <ul>
+                <li>Should governments prioritize renewable energy sources over fossil fuels?</li>
+                <li>How can individuals reduce their carbon footprint?</li>
+                <li>What role should corporations play in addressing climate change?</li>
+                <!-- Add more debate prompts as needed -->
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

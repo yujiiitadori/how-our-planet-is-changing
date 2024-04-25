@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Window</title>
+  <style>
+    /* Style for the game window */
+    #game-window {
+      width: 100%; /* Adjust width as needed */
+      margin: 0 auto;
+      text-align: center;
+      position: relative; /* Added position relative */
+    }
+    /* Style for the video */
+    #game-video {
+      width: 100%;
+    }
+    /* Style for the text */
+    #game-text {
+      margin-top: 20px;
+      text-align: left;
+    }
+    /* Style for the headings */
+    h1, h2 {
+      color: #333;
+    }
+    /* Style for the subtext */
+    p {
+      color: #666;
+    }
+    /* Style for the close button */
+      #close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  color: black;
+  transition: color 0.3s;
+  z-index: 1; /* Ensure the button is above other elements */
+}
+    /* Style for the close button hover effect */
+    #close-button:hover {
+      color: red;
+    }
+    
+
+  </style>
+</head>
+<body>
+  <div id="game-window">
+    <span id="close-button" onclick="closeGameWindow()">&#10006;</span> <!-- Cross button -->
+    <video id="game-video" controls autoplay>
+      <source src="your_video.mp4" type="video/mp4">
+      <!-- Add additional source elements for different video formats if needed -->
+      Your browser does not support the video tag.
+    </video>
+    <div id="game-text">
+      <h1>Main Heading</h1>
+      <p>Subtext under the main heading.</p>
+      <h2>Secondary Heading</h2>
+      <p>More subtext under the secondary heading.</p>
+    </div>
+  </div>
+
+  <script>
+    // Function to close the game window
+    function closeGameWindow() {
+      // Redirect to a different page
+      window.location.href = "home_page.html#section3"; // Change the URL to your desired page
+    }
+  </script>
+</body>
+</html>
