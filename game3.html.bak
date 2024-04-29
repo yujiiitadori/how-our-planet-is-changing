@@ -7,7 +7,7 @@
   <style>
     /* Style for the game window */
     #game-window {
-      width: 100%; /* Adjust width as needed */
+      width: 70%; /* Adjust width as needed */
       margin: 0 auto;
       text-align: center;
       position: relative; /* Added position relative */
@@ -20,14 +20,20 @@
     #game-text {
       margin-top: 20px;
       text-align: left;
+	  color: black; /* Set text color to black */
+
     }
     /* Style for the headings */
     h1, h2 {
       color: #333;
+	  font-size: 24px; /* Adjust font size for headings */
+
     }
     /* Style for the subtext */
     p {
       color: #666;
+	  font-size: 16px; /* Adjust font size for paragraphs */
+
     }
     /* Style for the close button */
       #close-button {
@@ -58,9 +64,99 @@
     </video>
     <div id="game-text">
       <h1>Main Heading</h1>
-      <p>Subtext under the main heading.</p>
+      <p>"Disaster Response" offers students a realistic and engaging experience that deepens their understanding of emergency management principles and prepares them to respond effectively to real-world disasters.</p>
+
+	  <p> HOW TO PLAY
+	  <br>
+Assign roles to players and provide them with role-specific information and resources.
+
+	  <br>
+Introduce the chosen disaster scenario and set the stage for the game.
+
+<br>
+Facilitate gameplay, guiding players through the different phases of disaster response.
+
+<br>
+Encourage communication, collaboration, and problem-solving among players.
+
+<br>
+Provide feedback and evaluate players' performance based on predetermined criteria.
+
+<br>
+Facilitate a debriefing session to discuss lessons learned, challenges encountered, and strategies for improving disaster preparedness and response in the future.
+
+	  </p>
       <h2>Secondary Heading</h2>
-      <p>More subtext under the secondary heading.</p>
+<p>
+Role Assignment:
+
+<br> 
+Each player is assigned a specific role representing a different stakeholder involved in disaster response, such as firefighters, paramedics, police officers, government officials, aid workers, and community volunteers.
+
+<br><br><br>
+
+Scenario Selection:
+
+<br>
+Choose from a variety of disaster scenarios to simulate, including earthquakes, hurricanes, floods, wildfires, tsunamis, pandemics, and industrial accidents.
+
+<br>
+Each scenario presents unique challenges and requires different response strategies.
+
+<br><br><br>
+
+Preparation:
+
+<br>
+Before the game begins, players familiarize themselves with their roles, responsibilities, and available resources.
+
+<br>
+They review emergency response plans, protocols, and procedures relevant to the chosen disaster scenario.
+
+<br><br><br>
+
+Gameplay:
+
+<br>
+The game unfolds in multiple phases, representing different stages of disaster response, including preparedness, mitigation, response, and recovery.
+
+<br>
+Players collaborate to assess the situation, prioritize needs, and allocate resources effectively.
+<br>
+They make decisions regarding evacuation orders, search and rescue operations, medical care, sheltering, logistics, and communication with the public.
+
+<br><br><br>
+
+Resource Management:
+
+<br>
+Players manage resources such as personnel, equipment, supplies, transportation, and funding.
+
+<br>
+They must balance competing demands and prioritize actions based on the severity of the situation and available resources.
+
+<br><br><br>
+
+Decision-Making:
+
+<br>
+Players make critical decisions under pressure, considering factors like safety, feasibility, ethical considerations, and community needs.
+
+<br>
+They respond to unexpected events, adjust strategies on the fly, and coordinate efforts with other stakeholders.
+
+<br><br><br>
+
+Evaluation and Feedback:
+
+<br>
+Throughout the game, players receive feedback on their performance based on criteria such as response time, effectiveness of actions, casualty rates, and community resilience.
+
+<br>
+After the game, players reflect on their experiences, discuss lessons learned, and identify areas for improvement in disaster preparedness and response.
+
+<br><br><br>
+</p>
     </div>
   </div>
 
@@ -68,7 +164,7 @@
     // Function to close the game window
     function closeGameWindow() {
       // Redirect to a different page
-      window.location.href = "home_page.html#section3"; // Change the URL to your desired page
+      window.location.href = "index.html#section3"; // Change the URL to your desired page
     }
   </script>
 </body>

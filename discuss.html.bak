@@ -141,7 +141,7 @@
         </div>
 
         <!-- Cross button -->
-        <a href="home_page.html#section4" class="cross-button">&#10006;</a>
+        <a href="index.html#section4" class="cross-button">&#10006;</a>
 
         <!-- AI chatbox -->
         <div class="chatbox">
